@@ -1,7 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0043)http://jacobkassay.herokuapp.com/index.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
 	<title>Jacob Kassay</title>
 	<meta name="keywords" content="jacob kassay, eleven rivington, jacob kassay artist, jacob kassay ny, New York, NY, Venice, CA, Los Angeles, LA, gallery, exhibition, canvas, canvases, artist, arts, art, artisan, abstract, painting, paintings, painter, silver paintings, silver plating, chemical process, silvered, acrylic, silver, silver deposit, installation, mirror, light, current art news, artist news, fine art, monochrome, museums, art market, technology, art technology, photography, photos, absolute, electroplated, minimal, fiberglass, modern painters, paper, tape, chemical, Rivington, Eleven, Lower East Side, LES, Art : Concept, Paris, France, Sorry We&#39;re Closed Gallery, Phillips de Pury, Brussels, Belgium, Collezione Maramotti, Collezione, Reggio Emilia, Italy, Franklin Art Works, Minneapolis, emerging artists, emerging, on the up, contemporary, emerging contemporary artists, ARTINFO, auction, auctioning, Silent Auction, meteoric, Meet Me at the Bottom of the Pool, Gwangju Biennale, The Coke Factory, White Columns, Bagna Cauda, Monochrome Reflections, Reflections, Negation, untitled, Subtraction, Dissolution, Le Faux Miroir, Modern Edition, ArtInfo "> 
 	<meta name="description" content="Jacob Kassay"> 
@@ -12,287 +10,90 @@
 	<meta property="og:image" content="http://www.jacobkassay.com/jk.gif">
 	<meta property="og:site_name" content="Jacob Kassay">
 	<link rel="image_src" href="http://www.jacobkassay.com/jk.gif">	
-	<script type="text/javascript" async="" src="ga.js"></script><script type="text/javascript" src="jquery.min.js"></script><meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Google Analytics&quot;:-1,&quot;jQuery&quot;:&quot;1.6.3&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script> 
-	<script type="text/javascript" src="jquery.imgpreload.min.js"></script> 	
-	<script type="text/javascript" src="jquery.animate-colors-min.js"></script>
-	<link rel="SHORTCUT ICON" href="http://jacobkassay.herokuapp.com/favicon.ico">
-	<link rel="stylesheet" href="css/base-update.css">
-
-	<script type="text/javascript">
-  function createCookie(name,value,days) {
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime()+(days*24*60*60*1000));
-      var expires = "; expires="+date.toGMTString();
-    }
-    else var expires = "";
-    document.cookie = name+"="+value+expires+"; path=/";
-  }
-  	
-  jQuery(function($)
-		{			 	  
-
-			var $content = $("#content").children();
-			$("#nav li").last().css("margin","0");
-			$("h1, .close").click(function(){
-				$("#content").find("div").fadeOut();
-				$("#images").fadeIn();
-			});
-			$("#nav li a").each(function(){
-				$(this).click(function(){
-					var a = $(this).attr("class");
-					$("#content").find("div").each(function(){
-						if ($(this).attr("id")!=a){
-							$(this).fadeOut();
-						}
-						if ($(this).attr("id")==a){							
-							if ($(this).is(":visible")){
-								//$(this).fadeOut();
-
-							}
-							else {
-								$(this).fadeIn();
-								
-							}							
-						}					
-					});
-				});
-			});
-			
-		});
-		// cache buster 
-		var t = (new Date).getTime();		
-		var the_images = [];
-		var ica = [];
-		var draw = [];
-		for (var x=0; x<58; x++) {
-			if (x<10){
-				the_images.push( 'images/0'+x+'.jpg');
-			}
-			else {
-				the_images.push('images/'+x+'.jpg');
-			}
-		}
-		for (var x=0; x<27; x++)
-			{
-				ica.push( 'images/ica0'+x+'.jpg');
-			}	
-		for (var x=0; x<52; x++){
-			if (x<10){
-				draw.push('images/draw0'+x+'.jpg');
-			}
-			else {
-				draw.push('images/draw'+x+'.jpg');
-			}
-		}
-	
-		jQuery.imgpreload(the_images,
-		{
-			each: function()
-			{
-				var pattern = new RegExp( "i=(\\d)", "gi" );
-
-				var m = pattern.exec($(this).attr('src'));
-
-				var status = $(this).data('loaded')?'success':'error';
-
-				//$('#status').append('<li>' + m[1] + ': ' + $(this).attr('src') + ' ' + status + '</li>');
-			},
-			all: function()
-			{
-				//$('#status').append('<li> all images loaded </li>');
-			}
-		});
-		jQuery.imgpreload(ica,
-		{
-			each: function()
-			{
-				var pattern = new RegExp( "i=(\\d)", "gi" );
-
-				var m = pattern.exec($(this).attr('src'));
-
-				var status = $(this).data('loaded')?'success':'error';
-
-				//$('#status').append('<li>' + m[1] + ': ' + $(this).attr('src') + ' ' + status + '</li>');
-			},
-			all: function()
-			{
-				//$('#status').append('<li> all images loaded </li>');
-			}
-		});
-
-	</script> 
-  <script type="text/javascript">
-    <!--
-        function delayer(){
-            window.location = "http://www.jacobkassay.com/about-jacob-kassay"
-        }
-    //-->
-  </script>
+	<script type="text/javascript" async="" src="js/ga.js">
+	</script><script type="text/javascript" src="js/jquery.min.js"></script>
+	<meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Google Analytics&quot;:-1,&quot;jQuery&quot;:&quot;1.6.3&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script> 
+	<script type="text/javascript" src="js/jquery.imgpreload.min.js"></script> 	
+	<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+	<script type="text/javascript" src="js/reflex.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body id="cursor" cz-shortcut-listen="true">
-<script language="JavaScript"><!--
-
-	// This function retrieves a cookie
-	function getCookie (name) {
-			var dc = document.cookie;
-			var cname = name + "=";
-	
-			if (dc.length > 0) {              
-			begin = dc.indexOf(cname);       
-				if (begin != -1) {           
-				begin += cname.length;       
-				end = dc.indexOf(";", begin);
-					if (end == -1) end = dc.length;
-					return unescape(dc.substring(begin, end));
-				} 
-			}
-			return null;
-	}
-	
-	//-->
-	</script>
-
-<script language="javascript">
-	// var co = getCookie('JK');
-	// if (co != "Redirect"){
-	// 	if (co != "Deferral"){
- //      createCookie('JK', 'Redirect', 30);
-	// 	}
-	// 	else {
- //      setTimeout('delayer()', 5000)
-	// 	}
-	// }
-	// if (co == 'Redirect'){
-	// 	createCookie('JK','Deferral',30);
-	// }
-	
-
-</script>
-<div id="header" style="display: block;">
-	
-	<h1 id="title">
-		Jacob Kassay
-	</h1>
-	<div id="nav">
-		<ul>
-			<li><a class="upcoming">Upcoming</a></li>
-			<li style="margin: 0px;"><a class="contact">Contact</a></li>
-
-		</ul>
-		
+	<div id="header" style="display: block;">
+		<h1 id="title">Jacob Kassay</h1>
+		<div id="nav">
+			<ul>
+				<li><a class="upcoming">Upcoming</a></li>
+				<li style="margin: 0px;"><a class="contact">Contact</a></li>
+			</ul>
+		</div>
 	</div>
-</div>
-<div id="content">
-	<div id="upcoming">
-	<h3>January</h3>
-	<p><a href="http://thekitchen.org/">The Kitchen</a><br></p>
-	<p class="close"><a><span>[ X ] </span>close</a></p>
-	</div>
+	<div id="content">
+		<div id="upcoming">
+			<h3>January</h3>
+			<p><a href="http://thekitchen.org/">The Kitchen</a><br></p>
+			<p class="close"><a><span>[ X ] </span>close</a></p>
+		</div>
 
-  <div id="contact">
-    <p class="name"><a href="http://www.galerieartconcept.com/" target="_blank">Art: Concept</a> <br>
-           Paris</p>
-           <p class="name"><a href="http://www.xavierhufkens.com/" target="_blank">Xavier Hufkens</a><br>
-           Bruxelles</p>
-           <p class="close"><a><span>[ X ] </span>close</a></p>
-  </div>
+  		<div id="contact">
+	    	<p class="name"><a href="http://www.galerieartconcept.com/" target="_blank">Art: Concept</a> <br>Paris</p>
+			<p class="name"><a href="http://www.xavierhufkens.com/" target="_blank">Xavier Hufkens</a><br>Bruxelles</p>
+			<p class="close"><a><span>[ X ] </span>close</a></p>
+  		</div>
 
-<div id="images">
-<script type="text/javascript">
-
-			// cache buster
-			var t = (new Date).getTime();
-			var icnt = the_images.length;
-			for (var i=0; i<icnt; i++)
-			{
-				the_images[i] = the_images[i].replace(/t=\d*/gi, 't=' + t);
-				document.write('<img src="' + the_images[i] + '" class="shift" id="_'+i+'" style="top:'+Math.floor(Math.random()*6000+100)+'px; left:'+Math.floor(Math.random()*($(window).width()-420)+10)+'px; z-index: -'+Math.floor(Math.random()*1000)+'; width: 400px; opacity:.50; -moz-opacity:0.50; filter:alpha(opacity=50);" />');
-			}
-
-			
-			var icntca = ica.length;
-			for (var i=0; i<icntca; i++)
-			{
-				ica[i] = ica[i].replace(/t=\d*/gi, 't=' + t);
-				document.write('<img src="' + ica[i] + '" class="shift" id="_'+(i+56)+'" style="top:'+Math.floor(Math.random()*4000+3000)+'px; left:'+Math.floor(Math.random()*($(window).width()-650)+10)+'px; z-index: -'+Math.floor(Math.random()*1000)+'; width: 600px; opacity:.50; -moz-opacity:0.50; filter:alpha(opacity=50);" />');
-			}
-			
-			var icntdraw = draw.length;
-			for (var i=0; i<icntdraw; i++)
-			{
-				draw[i] = draw[i].replace(/t=\d*/gi, 't=' + t);
-				document.write('<img src="' + draw[i] + '" class="shift" id="_'+(i+56)+'" style="top:'+Math.floor(Math.random()*4000+6000)+'px; left:'+Math.floor(Math.random()*($(window).width()-650)+10)+'px; z-index: -'+Math.floor(Math.random()*1000)+'; width: 600px; opacity:.50; -moz-opacity:0.50; filter:alpha(opacity=50);" />');
-			}
-			
-			var clicktracker = 0;
-			$lastImg = $('#images #_55');
-			$('#images img').click(function(){
-				if ($(this).attr("id") != $lastImg.attr("id")){
-					$lastImg.animate({opacity:'.5'},600);
-			  }				
-				$(this).css('z-index', 1+clicktracker).css({opacity:'1'},600);
-				clicktracker = clicktracker + 1;
-				$lastImg = $(this);
-			});			
-		</script>
-</div>
-<script type="text/javascript">
-
-		jQuery(function($)
-		{
-			
-			$('#images img').imgpreload
-			({
-				all: function()  
+		<div id="images">
+			<script type="text/javascript">
+				var t = (new Date).getTime();
+				var icnt = the_images.length;
+				for (var i=0; i<icnt; i++)
 				{
-					//$('#domstatus').append('<li> all images loaded </li>');
-					$('#images').fadeIn(2000);
+					the_images[i] = the_images[i].replace(/t=\d*/gi, 't=' + t);
+					document.write('<img src="' + the_images[i] + '" class="shift" id="_'+i+'" style="top:'+Math.floor(Math.random()*6000+100)+'px; left:'+Math.floor(Math.random()*($(window).width()-420)+10)+'px; z-index: -'+Math.floor(Math.random()*1000)+'; width: 400px; opacity:.50; -moz-opacity:0.50; filter:alpha(opacity=50);" />');
 				}
-			});
 
-			$("img").mousedown(function(){
-					return false;
-			});
-
-		 	
-		 	function rgb2hex(rgb) {
-					rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-					function hex(x) {
-							return ("0" + parseInt(x).toString(16)).slice(-2);
-					}
-					return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-			}
-			function genRGB() {
-				var randRGB = "rgb("+Math.floor(Math.random()*55+200)+","+Math.floor(Math.random()*55+200)+","+Math.floor(Math.random()*55+200)+")";
-				return randRGB;
-			}
-			var newBG = rgb2hex(genRGB());
-			setInterval(function() {
-				newBG = rgb2hex(genRGB());
-				$('html').animate({backgroundColor: newBG}, 15000);
 				
-			}, 15000);
-			
-			
-			
-		});
+				var icntca = ica.length;
+				for (var i=0; i<icntca; i++)
+				{
+					ica[i] = ica[i].replace(/t=\d*/gi, 't=' + t);
+					document.write('<img src="' + ica[i] + '" class="shift" id="_'+(i+56)+'" style="top:'+Math.floor(Math.random()*4000+3000)+'px; left:'+Math.floor(Math.random()*($(window).width()-650)+10)+'px; z-index: -'+Math.floor(Math.random()*1000)+'; width: 600px; opacity:.50; -moz-opacity:0.50; filter:alpha(opacity=50);" />');
+				}
+				
+				var icntdraw = draw.length;
+				for (var i=0; i<icntdraw; i++)
+				{
+					draw[i] = draw[i].replace(/t=\d*/gi, 't=' + t);
+					document.write('<img src="' + draw[i] + '" class="shift" id="_'+(i+56)+'" style="top:'+Math.floor(Math.random()*4000+6000)+'px; left:'+Math.floor(Math.random()*($(window).width()-650)+10)+'px; z-index: -'+Math.floor(Math.random()*1000)+'; width: 600px; opacity:.50; -moz-opacity:0.50; filter:alpha(opacity=50);" />');
+				}
+				
+				var clicktracker = 0;
+				$lastImg = $('#images #_55');
+				$('#images img').click(function(){
+					if ($(this).attr("id") != $lastImg.attr("id")){
+						$lastImg.animate({opacity:'.5'},600);
+				  }				
+					$(this).css('z-index', 1+clicktracker).animate({opacity:'1'},600);
+					clicktracker = clicktracker + 1;
+					$lastImg = $(this);
+				});	
 
-	</script> 
-	<script type="text/javascript">
+			</script>
+		</div>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-19930938-1']);
-  _gaq.push(['_trackPageview']);
+			<script type="text/javascript">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-19930938-1']);
+			  _gaq.push(['_trackPageview']);
 
-</script>
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
 
- 
+			</script>
 
-</div></body></html>
+		</div>
+	</body>
+</html>
